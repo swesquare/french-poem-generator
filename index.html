@@ -7,35 +7,45 @@
     <title>AI French Poem Generator</title>
   </head>
   <body>
-    <header>
-      <h1>AI French Poem Generator</h1>
-    </header>
-    <main>
-      <form action="">
-        <input
-          type="text"
-          name=""
-          id=""
-          placeholder="Enter the topic of the French poem"
-        />
-        <input type="submit" value="submit" />
-      </form>
-    </main>
+    <div class="container">
+      <header>
+        <h1>AI French Poem Generator</h1>
+      </header>
+      <main>
+        <form action="">
+          <input
+            type="text"
+            placeholder="Enter the topic of the French poem"
+            autofocus
+            required
+            autocomplete="off"
+            class="instructions"
+          />
+          <input type="submit" value="submit" class="submit-button" />
+        </form>
+        <div class="poem">
+          La tombe dit a la rose
+          <br />
+          Des pleurs dont l'aube t'arrose
+        </div>
+      </main>
 
-    <footer>
-      This was coded by
-      <a href="https://github.com/swesquare" target="_blank">Swe Swe</a> and is
-      <a
-        href="https://github.com/swesquare/french-poem-generator"
-        target="_blank"
-      >
-        open-sourced on GitHub</a
-      >
-      and hosted on
-      <a href="https://french-poem-generator-swe.vercel.app/" target="_blank"
-        >Vercel</a
-      >
-    </footer>
+      <footer>
+        This was coded by
+        <a href="https://github.com/swesquare" target="_blank">Swe Swe</a> and
+        is
+        <a
+          href="https://github.com/swesquare/french-poem-generator"
+          target="_blank"
+        >
+          open-sourced on GitHub</a
+        >
+        and is
+        <a href="https://french-poem-generator-swe.vercel.app/" target="_blank">
+          hosted on Vercel</a
+        >
+      </footer>
+    </div>
     <script src="src/index.js"></script>
   </body>
 </html>
