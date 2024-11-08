@@ -20,13 +20,21 @@ h1 {
 main {
   margin-bottom: 30px;
 }
-form {
-  padding: 30px;
+.form-container {
+  padding: 15px 20px;
   background-color: white;
   box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
   border-radius: 10px;
-  display: flex;
   margin-bottom: 30px;
+}
+form {
+  display: flex;
+}
+.hint {
+  margin-top: 5px;
+  line-height: 1.5;
+  font-size: 12px;
+  opacity: 0.6;
 }
 .instructions {
   padding: 16px;
@@ -54,10 +62,26 @@ form {
   line-height: 2;
   border-left: 3px solid#885df1;
   box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.03);
-  border-radius: 10px;
+}
+.hidden {
+  display: none;
 }
 .poem strong {
   color: #885df1;
+}
+.generating {
+  animation: blink-animation 1s steps(5, start) infinite;
+  -webkit-animation: blink-animation 1s steps(5, start) infinite;
+}
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
 }
 footer {
   text-align: center;
